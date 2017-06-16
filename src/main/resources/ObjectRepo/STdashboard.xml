@@ -1,0 +1,5 @@
+<Elements>
+    <Element name = "createtree" locatorType = "linkText" locatorValue = "Create S&amp;T"/>
+    <Element name = "treename" locatorType="xpath" locatorValue="//*[starts-with(@id,'inputText')]"/>
+    <Element name = "okbutton" locatorType="xpath" locatorValue="//*[starts-with(@id,'buttonOK')]"/>
+</Elements>
