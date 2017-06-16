@@ -11,7 +11,7 @@ import java.util.Map;
 public class StrategyDashboard extends GuiControl {
     Map <String,String> stmap = new XMLReader().getObjectRepoData("STdashboard");
 
-    public void logout(){
+    public void logOut(){
         getWebElement(stmap.get("usernamedrop")).click();
         getWebElement(stmap.get("logout")).click();
     }

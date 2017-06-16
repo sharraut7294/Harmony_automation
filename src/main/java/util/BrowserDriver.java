@@ -12,6 +12,10 @@ public class BrowserDriver {
     public static void accessUrl(String url){
         GuiControl.getWebDriver().get(url);
     }
+
+    public static void maximizeBrowser(){
+        GuiControl.getWebDriver().manage().window().maximize();
+    }
     public static void closeBrowser(){
         GuiControl.getWebDriver().close();
     }

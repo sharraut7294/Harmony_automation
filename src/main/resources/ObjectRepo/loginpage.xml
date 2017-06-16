@@ -4,8 +4,6 @@
         <Element name = "password" locatorType = "id" locatorValue = "Password"></Element>
         <Element name = "loginbutton" locatorType = "xpath" locatorValue = "/html/body/div[1]/div[2]/div/form/div[4]/a"/>
         <Element name = "current_role" locatorType = "xpath" locatorValue = "/html/body/header/div/div/div/div/ul/div/h4"/>
-        <Element name = "usernamedrop" locatorType = "xpath" locatorValue = "/html/body/header/div/div/div/div/ul/li[4]/div/a"/>
-        <Element name = "logout" locatorType = "linkText" locatorValue = "Logout"/>
         <Element name = "forgotpassword" locatorType = "linkText" locatorValue = "Forgot password"/>
         <Element name = "forgotpassemail" locatorType = "id" locatorValue = "Email"/>
         <Element name = "sendbutton" locatorType = "linkText" locatorValue = "Send"/>

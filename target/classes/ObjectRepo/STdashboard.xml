@@ -1,4 +1,6 @@
 <Elements>
+    <Element name = "usernamedrop" locatorType = "xpath" locatorValue = "/html/body/header/div/div/div/div/ul/li[4]/div/a"/>
+    <Element name = "logout" locatorType = "linkText" locatorValue = "Logout"/>
     <Element name = "createtree" locatorType = "linkText" locatorValue = "Create S&amp;T"/>
     <Element name = "treename" locatorType="xpath" locatorValue="//*[starts-with(@id,'inputText')]"/>
     <Element name = "okbutton" locatorType="xpath" locatorValue="//*[starts-with(@id,'buttonOK')]"/>
