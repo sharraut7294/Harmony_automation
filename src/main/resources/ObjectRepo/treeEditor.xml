@@ -1,0 +1,11 @@
+<Elements>
+    <Element name = "homebutton" locatorType = "id" locatorValue ="btnUserTrees"/>
+    <Element name = "addchild" locatorType="id" locatorValue="btnAddChildNodeLink"/>
+    <Element name = "childname" locatorType="xpath" locatorValue="//*[starts-with(@id,'inputText')]"/>
+    <Element name = "buttonok" locatorType="xpath" locatorValue="//*[starts-with(@id,'buttonOK')]"/>
+    <Element name = "addfromgoldratt" locatorType="id" locatorValue="btnAddFromGoldratLibraryLink"/>
+    <Element name = "addgoldtree" locatorType="id" locatorValue="btnAddNode"/>
+    <Element name = "addfromcommunity" locatorType="id" locatorValue="btnAddFromTocCommunityLink"/>
+    <Element name = "addcommtree" locatorType="id" locatorValue="btnAddNode"/>
+    <Element name = "groups" locatorType="">
+</Elements>

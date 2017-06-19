@@ -2,6 +2,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.LoginPage;
 import pages.StrategyDashboard;
+import pages.TreeEditor;
 import util.BrowserDriver;
 
 /**
@@ -14,12 +15,16 @@ public class BaseTestScript {
         BrowserDriver.maximizeBrowser();
         BrowserDriver.accessUrl("http://www.qa.harmonytoc.com");
         LoginPage loginPage = new LoginPage();
-        loginPage.successfulLogin("sharvari.raut+1@forgeahead.io", "1");
+        loginPage.successfulLogin("sharvari.raut+10@forgeahead.io", "1");
     }
     @AfterClass
-    public void signout(){
-        StrategyDashboard logout = new StrategyDashboard();
-        logout.logOut();
-        BrowserDriver.closeBrowser();
+    /*public void home(){
+        TreeEditor homebutton = new TreeEditor();
+        homebutton.navigateHome();
+    }*/
+    public void signOut(){
+        /*StrategyDashboard logout = new StrategyDashboard();
+        logout.logOut();*/
+        //BrowserDriver.closeBrowser();
     }
 }

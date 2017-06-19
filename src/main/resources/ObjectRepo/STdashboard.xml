@@ -4,4 +4,12 @@
     <Element name = "createtree" locatorType = "linkText" locatorValue = "Create S&amp;T"/>
     <Element name = "treename" locatorType="xpath" locatorValue="//*[starts-with(@id,'inputText')]"/>
     <Element name = "okbutton" locatorType="xpath" locatorValue="//*[starts-with(@id,'buttonOK')]"/>
+    <Element name = "treeselect" locatorType="xpath" locatorValue="//*[@data-id='1020']"/>
+    <Element name = "privateshare" locatorType="linkText" locatorValue="Share Privately"/>
+    <Element name = "adduser" locatorType="id" locatorValue="btnAddUser"/>
+    <Element name = "useremail1" locatorType="xpath" locatorValue="//*[@id='divSharePopup']/div/div[3]/table/tbody/tr[2]/td[1]/input"/>
+    <Element name = "username1" locatorType="xpath" locatorValue="//*[@id='divSharePopup']/div/div[3]/table/tbody/tr[2]/td[2]/input"/>
+    <Element name = "canchangeall" locatorType="id" locatorValue="chbCheckAll"/>
+    <Element name = "sharebutton" locatorType="id" locatorValue="btnApplyShare"/>
+    <Element name = "shareok" locatorType="id" locatorValue="btnCloseSharingResultDialog"/>
 </Elements>
