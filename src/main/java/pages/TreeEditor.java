@@ -10,36 +10,27 @@ import java.util.Map;
  */
 public class TreeEditor extends GuiControl {
 
-    Map<String,String> treemap = new XMLReader().getObjectRepoData("treeEditor");
+    Map<String,String> maptree = new XMLReader().getObjectRepoData("treeEditor");
+
 
     public void navigateHome(){
-        getWebElement(treemap.get("homebutton")).click();
+        getWebElement(maptree.get("homebutton")).click();
     }
-    public void addChild(String childname){
-        try {
-            Thread.sleep(10000);
-            getWebElement(treemap.get("addchild")).click();
-            getWebElement(treemap.get("childname")).sendKeys(childname);
-            getWebElement(treemap.get("buttonok")).click();
-        }
-        catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+
     public void addGoldratt(){
     try{
-        getWebElement(treemap.get("addfromgoldratt")).click();
+        getWebElement(maptree.get("addfromgoldratt")).click();
         Thread.sleep(6000);
-        getWebElement(treemap.get("addgoldtree")).click();
+        getWebElement(maptree.get("addgoldtree")).click();
     }catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
     public void addCommunity(){
         try{
-            getWebElement(treemap.get("addfromcommunity")).click();
+            getWebElement(maptree.get("addfromcommunity")).click();
             Thread.sleep(6000);
-            getWebElement(treemap.get("addcommtree")).click();
+            getWebElement(maptree.get("addcommtree")).click();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

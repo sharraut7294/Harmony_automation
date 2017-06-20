@@ -1,0 +1,33 @@
+<Elements>
+    <Element name = "changenodetitle" locatorType="id" locatorValue="btnChangeCaptionLink"/>
+    <Element name = "titletext" locatorType="xpath" locatorValue="//input[starts-with(@id,'inputText')]"/>
+    <Element name = "titleok" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK')]"/>
+    <Element name = "titlecancel" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonCancel')]"/>
+    <Element name = "nodeDetails" locatorType="id" locatorValue="btnNodeDetails"/>
+    <Element name = "zoomin" locatorType="id" locatorValue="btnZoomOutIco"/>
+    <Element name = "navigatebottom" locatorType="id" locatorValue="btnNavigationBottom"/>
+    <Element name = "navigateup" locatorType="id" locatorValue="btnNavigationTop"/>
+    <Element name = "navigateleft" locatorType="id" locatorValue="btnNavigationLeft"/>
+    <Element name = "navigateright" locatorType="id" locatorValue="btnNavigationRight"/>
+    <Element name = "errorconsole" locatorType="id" locatorValue="btnShowConsole"/>
+    <Element name = "treeinfo" locatorType="id" locatorValue="btnTreeDetails"/>
+    <Element name = "nodescale" locatorType="id" locatorValue="slctNodeZoom"/>
+    <Element name = "zoomminus" locatorType="id" locatorValue="zoomMinus"/>
+    <Element name = "zoomplus" locatorType="id" locatorValue="zoomPlus"/>
+    <Element name = "fitscreen" locatorType="id" locatorValue="btnFitScreen"/>
+    <Element name = "fullscreen" locatorType="className" locatorValue="ico full-screen"/>
+    <Element name = "undoaction" locatorType="id" locatorValue = "btnUndo"/>
+    <Element name = "redoaction" locatorType="id" locatorValue = "btnRedo"/>
+    <Element name = "noramltreeview" locatorType="id" locatorValue="btnTreeView"/>
+    <Element name = "gridview" locatorType="id" locatorValue="btnGridView"/>
+    <Element name = "STview" locatorType="id" locatorValue="btnDetailsViewST"/>
+    <Element name = "daysview" locatorType="id" locatorValue="btnDetailsView"/>
+    <Element name = "exportdoc" locatorType="id" locatorValue="btnPrint"/>
+    <Element name = "exportxml" locatorType="id" locatorValue="btnExportTree"/>
+    <Element name = "findandreplace" locatorType="id" locatorValue="btnFindAndReplace"/>
+    <Element name = "savebutton" locatorType="id" locatorValue="btnSave"/>
+    <Element name = "saveasbutton" locatorType="id" locatorValue="btnSaveAs"/>
+    <Element name = "addparent" locatorType="id" locatorValue="btnAddParentNodeLink"/>
+    <Element name = "parentname" locatorType="xpath" locatorValue="//input[starts-with(@id,'inputText')]"/>
+    <Element name = "okbutton" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK')]"/>
+</Elements>

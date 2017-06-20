@@ -1,0 +1,11 @@
+<suite name="Regressionsuite" verbose="1" >
+    <test name="Regression1">
+        <classes>
+            <class name="CreateTree"/>
+            <class name="ChangeNodeTitle"/>
+            <class name="AddChild"/>
+            <class name="AddParent"/>
+            <class name="SaveManually"/>
+        </classes>
+    </test>
+</suite>

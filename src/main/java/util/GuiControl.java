@@ -18,8 +18,7 @@ public class GuiControl {
     }
 
     public static void setWebDriver(String browserName) {
-        switch(browserName)
-        {
+        switch(browserName){
             case "Chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/lib/linux/chromedriver");
                 webDriver = new ChromeDriver();
@@ -29,19 +28,15 @@ public class GuiControl {
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/lib/linux/geckodriver");
                 webDriver = new FirefoxDriver();
                 break;
-
-
         }
     }
 
-    public WebElement getWebElement(String loc)
-    {
+    public WebElement getWebElement(String loc) {
 
         String locType = loc.split("_TBD_")[0];
         String locValue =loc.split("_TBD_")[1];
         WebElement element  = null;
-        switch(locType)
-        {
+        switch(locType){
             case "id":
                 element = webDriver.findElement(By.id(locValue));
                 break;
@@ -69,6 +64,12 @@ public class GuiControl {
         return element;
     }
 
+    public void waitForSeconds(int timeInSeconds){
+        for (int i=0;i<timeInSeconds;i++)
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
 
-
+            }
+    }
 }
