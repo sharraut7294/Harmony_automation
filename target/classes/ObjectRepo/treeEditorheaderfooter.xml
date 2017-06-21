@@ -27,7 +27,4 @@
     <Element name = "findandreplace" locatorType="id" locatorValue="btnFindAndReplace"/>
     <Element name = "savebutton" locatorType="id" locatorValue="btnSave"/>
     <Element name = "saveasbutton" locatorType="id" locatorValue="btnSaveAs"/>
-    <Element name = "addparent" locatorType="id" locatorValue="btnAddParentNodeLink"/>
-    <Element name = "parentname" locatorType="xpath" locatorValue="//input[starts-with(@id,'inputText')]"/>
-    <Element name = "okbutton" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK')]"/>
 </Elements>

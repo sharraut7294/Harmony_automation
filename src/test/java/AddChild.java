@@ -4,7 +4,7 @@ import pages.DesignModule;
 /**
  * Created by sharvari on 20/6/17.
  */
-public class AddChild extends BaseTestScript {
+public class AddChild {
     @Test
     public void addChild(){
         DesignModule child = new DesignModule();

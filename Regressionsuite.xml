@@ -5,7 +5,19 @@
             <class name="ChangeNodeTitle"/>
             <class name="AddChild"/>
             <class name="AddParent"/>
-            <class name="SaveManually"/>
+            <class name="NodeDetails"/>
+            <class name="StrategyDetails"/>
+            <class name="TacticDetails"/>
+            <class name="StrategyupArrow"/>
+            <class name="NecessaryAssumptions"/>
+            <class name="TacticUp"/>
+            <class name="ParallelAssumptions"/>
+            <class name="SufficiencyAssumptions"/>
+            <class name="ShowHideAssumptions"/>
+            <class name="ShowHideFormatting"/>
+            <class name="StrategyLink"/>
+            <class name="PresentationMode"/>
+            <class name="CloseNodeDetails"/>
         </classes>
     </test>
 </suite>

@@ -4,10 +4,10 @@ import pages.StrategyDashboard;
 /**
  * Created by sharvari on 20/6/17.
  */
-public class CreateTree extends BaseTestScript {
+public class CreateTree{
     @Test
     public void createST(){
         StrategyDashboard tree = new StrategyDashboard();
-        tree.createTree("Test New tree on 20 june");
+        tree.createTree("Test Automated New tree on 21 june");
     }
 }

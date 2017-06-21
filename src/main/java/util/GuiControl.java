@@ -1,5 +1,6 @@
 package util;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -63,7 +64,6 @@ public class GuiControl {
         }
         return element;
     }
-
     public void waitForSeconds(int timeInSeconds){
         for (int i=0;i<timeInSeconds;i++)
             try {
@@ -72,4 +72,12 @@ public class GuiControl {
 
             }
     }
+    public void frame(String frameid){
+        webDriver.switchTo().frame(frameid);
+    }
+    public void switchMain(){
+        webDriver.switchTo().defaultContent();
+    }
+
+
 }

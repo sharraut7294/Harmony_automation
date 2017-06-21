@@ -1,5 +1,8 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import util.GuiControl;
 import util.XMLReader;
 
@@ -13,7 +16,7 @@ public class DesignModule extends GuiControl{
     Map<String,String> treemap = new XMLReader().getObjectRepoData("treeEditor");
 
     public void changeTitle(String nodetitle){
-        waitForSeconds(4);
+        waitForSeconds(3);
         getWebElement(designmap.get("changenodetitle")).click();
         getWebElement(designmap.get("titletext")).sendKeys(nodetitle);
         getWebElement(designmap.get("titleok")).click();
@@ -41,6 +44,7 @@ public class DesignModule extends GuiControl{
     public void navigateRight(){
         getWebElement(designmap.get("navigateright")).click();
     }
+
     public void addParent(String parentname){
         waitForSeconds(3);
         getWebElement(treemap.get("addparent")).click();
@@ -49,6 +53,11 @@ public class DesignModule extends GuiControl{
     }
     public void saveChanges(){
         getWebElement(designmap.get("savebutton")).click();
-        waitForSeconds(4);
+        waitForSeconds(1);
+    }
+    public void navigateNodeDetails(){
+        Actions act = new Actions(getWebDriver());
+        act.moveToElement(getWebElement(designmap.get("nodeDetails"))).click().build().perform();
+
     }
 }

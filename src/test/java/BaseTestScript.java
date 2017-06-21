@@ -2,6 +2,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import pages.DesignModule;
 import pages.LoginPage;
 import pages.StrategyDashboard;
 import pages.TreeEditor;
@@ -21,6 +22,8 @@ public class BaseTestScript {
     }
     @AfterSuite
     public void signOut(){
+        DesignModule save = new DesignModule();
+        save.saveChanges();
         TreeEditor homebutton = new TreeEditor();
         homebutton.navigateHome();
         StrategyDashboard logout = new StrategyDashboard();

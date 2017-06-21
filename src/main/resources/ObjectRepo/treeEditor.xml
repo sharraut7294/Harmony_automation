@@ -10,4 +10,24 @@
     <Element name = "addgoldtree" locatorType="id" locatorValue="btnAddNode"/>
     <Element name = "addfromcommunity" locatorType="id" locatorValue="btnAddFromTocCommunityLink"/>
     <Element name = "addcommtree" locatorType="id" locatorValue="btnAddNode"/>
+    <Element name = "strategydetails" locatorType="xpath" locatorValue="//*[@id='tinymce']"/>
+    <Element name = "tacticdetails" locatorType="xpath" locatorValue="//*[@id='tinymce']"/>
+    <Element name = "strategyarrow" locatorType="xpath" locatorValue="//td[@id='arrowImgStrategy']"/>
+    <Element name = "necessaryassumptions" locatorType="xpath" locatorValue="//*[@id='tinymce']"/>
+    <Element name = "tacticuparrow" locatorType="xpath" locatorValue="//td[@id='arrowImgTacticUp']"/>
+    <Element name = "parallelassumptions" locatorType="xpath" locatorValue="//*[@id='tinymce']"/>
+    <Element name = "tacticdownarrow" locatorType="xpath" locatorValue="//td[@id='arrowImgTacticDown']"/>
+    <Element name = "sufficiencyassumptions" locatorType="xpath" locatorValue="//*[@id='tinymce']"/>
+    <Element name = "showhideassumptions" locatorType="id" locatorValue="btnExpandCollapse"/>
+    <Element name = "showformatting" locatorType="id" locatorValue="btnShowEditor"/>
+    <Element name = "hideformatting" locatorType="id" locatorValue="btnHideEditor"/>
+    <Element name = "strategylinkedfiles" locatorType="xpath" locatorValue="//*[@data-node-category ='Strategy']"/>
+    <Element name = "addstrategylink" locatorType="id" locatorValue="btnShowAddLinkPanel"/>
+    <Element name = "enterstrategylink" locatorType="xpath" locatorValue="//input[@id='txtHref']"/>
+    <Element name = "closedetails" locatorType="id" locatorValue="btnClose"/>
+    <Element name = "oklink" locatorType="id" locatorValue="btnNewAttach"/>
+    <Element name = "okattach" locatorType="id" locatorValue="btnSaveAttach"/>
+    <Element name = "fullscreenmode" locatorType="id" locatorValue="btnPresentationMode"/>
+    <Element name = "presentationdown" locatorType="id" locatorValue="btnNodeDetailsSlideBottom"/>
+    <Element name = "presentationup" locatorType="id" locatorValue="btnNodeDetailsSlideTop"/>
 </Elements>
