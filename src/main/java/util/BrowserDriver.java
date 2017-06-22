@@ -22,6 +22,8 @@ public class BrowserDriver {
         GuiControl.getWebDriver().manage().window().maximize();
     }
 
+    public static void navigateBack() { GuiControl.getWebDriver().navigate().back();}
+
     public static void closeBrowser(){
         GuiControl.getWebDriver().close();
     }

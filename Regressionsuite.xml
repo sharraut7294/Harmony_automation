@@ -5,19 +5,26 @@
             <class name="ChangeNodeTitle"/>
             <class name="AddChild"/>
             <class name="AddParent"/>
-            <class name="NodeDetails"/>
+            <!--<class name="NodeDetails"/>
             <class name="StrategyDetails"/>
             <class name="TacticDetails"/>
-            <class name="StrategyupArrow"/>
             <class name="NecessaryAssumptions"/>
-            <class name="TacticUp"/>
             <class name="ParallelAssumptions"/>
             <class name="SufficiencyAssumptions"/>
             <class name="ShowHideAssumptions"/>
             <class name="ShowHideFormatting"/>
             <class name="StrategyLink"/>
+            <class name="TacticLLink"/>
+            <class name="StrategyPlanningNodeDetails"/>
+            <class name="TacticPlanningNodeDetails"/>
             <class name="PresentationMode"/>
             <class name="CloseNodeDetails"/>
+            <class name="NavigateDesign"/>-->
+            <class name="DeleteChild"/>
+            <class name="DeleteParentSingleChild"/>
+            <class name="UndoAction"/>
+            <class name="DeleteParentReplaceChild"/>
+            <class name="DeleteParentMultipleChild"/>
         </classes>
     </test>
 </suite>

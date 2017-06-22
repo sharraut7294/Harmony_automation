@@ -8,6 +8,7 @@ public class ParallelAssumptions{
     @Test
     public void parallelAssumptions(){
         NodeDetailsPage parallel = new NodeDetailsPage();
+        parallel.tacticUp();
         parallel.parallelAssumptions("Viability Assumptions 1");
 
     }

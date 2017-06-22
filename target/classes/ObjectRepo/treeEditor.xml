@@ -30,4 +30,19 @@
     <Element name = "fullscreenmode" locatorType="id" locatorValue="btnPresentationMode"/>
     <Element name = "presentationdown" locatorType="id" locatorValue="btnNodeDetailsSlideBottom"/>
     <Element name = "presentationup" locatorType="id" locatorValue="btnNodeDetailsSlideTop"/>
+    <Element name = "tacticlinkedfiles" locatorType="xpath" locatorValue="//*[@data-node-category = 'Tactic']"/>
+    <Element name = "tacticlink" locatorType="id" locatorValue="btnShowAddLinkPanel"/>
+    <Element name = "entertacticlink" locatorType="xpath" locatorValue="//input[@id='txtHref']"/>
+    <Element name = "oktacticlink" locatorType="id" locatorValue="btnNewAttach"/>
+    <Element name = "oktacticattach" locatorType="id" locatorValue="btnSaveAttach"/>
+    <Element name = "strategyplanning" locatorType="xpath" locatorValue="//a[@id='lnkStrategyPlanning']"/>
+    <Element name = "tacticplanning" locatorType="xpath" locatorValue="//a[@id='lnkTacticPlaning']"/>
+    <Element name = "savestrategy" locatorType="xpath" locatorValue="//a[@id='btnSaveStrategyDetails']"/>
+    <Element name = "savetactic" locatorType="xpath" locatorValue="//a[@id='btnSaveTacticDetails']"/>
+    <Element name = "deletenode" locatorType="xpath" locatorValue="//a[@id='btnDeleteNodeLink']"/>
+    <Element name = "noparent" locatorType="linkText" locatorValue="No"/>
+    <Element name = "yesparent" locatorType="linkText" locatorValue="Yes"/>
+    <Element name = "navigatedesign" locatorType="xpath" locatorValue="//a[@href='/Design/Tree']"/>
+
+
 </Elements>

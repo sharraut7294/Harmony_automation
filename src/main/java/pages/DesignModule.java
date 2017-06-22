@@ -55,9 +55,41 @@ public class DesignModule extends GuiControl{
         getWebElement(designmap.get("savebutton")).click();
         waitForSeconds(1);
     }
+    //Element not clickable error
+
     public void navigateNodeDetails(){
         Actions act = new Actions(getWebDriver());
         act.moveToElement(getWebElement(designmap.get("nodeDetails"))).click().build().perform();
 
     }
+    public void deleteChildNode(){
+        getWebElement(treemap.get("deletenode")).click();
+        waitForSeconds(1);
+    }
+    public void deleteParentNodeMultipleChild(){
+        getWebElement(treemap.get("deletenode")).click();
+        alertPopup();
+    }
+    public void deleteParentSingleChild(){
+        getWebElement(treemap.get("deletenode")).click();
+        getWebElement(treemap.get("yesparent")).click();
+        waitForSeconds(2);
+    }
+    public void deleteParentReplaceChild(){
+        getWebElement(treemap.get("deletenode")).click();
+        getWebElement(treemap.get("noparent")).click();
+        waitForSeconds(1);
+    }
+    public void undoAction(){
+        getWebElement(designmap.get("undoaction")).click();
+        waitForSeconds(1);
+    }
+    public void redoAction(){
+        getWebElement(designmap.get("redoaction")).click();
+        waitForSeconds(1);
+    }
+    public void navigateDesignModule(){
+        getWebElement(treemap.get("navigatedesign")).click();
+    }
+
 }
