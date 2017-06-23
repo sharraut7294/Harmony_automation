@@ -11,6 +11,9 @@ public class DeleteParentMultipleChild {
         parentdel.navigateDown();
         parentdel.navigateRight();
         parentdel.deleteParentNodeMultipleChild();
+        parentdel.undoAction();
+        parentdel.undoAction();
+        parentdel.undoAction();
     }
 }
 

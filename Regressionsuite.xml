@@ -5,7 +5,7 @@
             <class name="ChangeNodeTitle"/>
             <class name="AddChild"/>
             <class name="AddParent"/>
-            <!--<class name="NodeDetails"/>
+            <class name="NodeDetails"/>
             <class name="StrategyDetails"/>
             <class name="TacticDetails"/>
             <class name="NecessaryAssumptions"/>
@@ -19,7 +19,7 @@
             <class name="TacticPlanningNodeDetails"/>
             <class name="PresentationMode"/>
             <class name="CloseNodeDetails"/>
-            <class name="NavigateDesign"/>-->
+            <class name="NavigateDesign"/>
             <class name="DeleteChild"/>
             <class name="DeleteParentSingleChild"/>
             <class name="UndoAction"/>

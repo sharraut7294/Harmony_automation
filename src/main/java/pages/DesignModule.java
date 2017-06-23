@@ -68,15 +68,18 @@ public class DesignModule extends GuiControl{
     }
     public void deleteParentNodeMultipleChild(){
         getWebElement(treemap.get("deletenode")).click();
+        waitForSeconds(1);
         alertPopup();
     }
     public void deleteParentSingleChild(){
         getWebElement(treemap.get("deletenode")).click();
+        waitForSeconds(1);
         getWebElement(treemap.get("yesparent")).click();
         waitForSeconds(2);
     }
     public void deleteParentReplaceChild(){
         getWebElement(treemap.get("deletenode")).click();
+        waitForSeconds(1);
         getWebElement(treemap.get("noparent")).click();
         waitForSeconds(1);
     }
@@ -92,4 +95,14 @@ public class DesignModule extends GuiControl{
         getWebElement(treemap.get("navigatedesign")).click();
     }
 
+    public void addGoldratt(){
+        getWebElement(treemap.get("addfromgoldratt")).click();
+        waitForSeconds(2);
+        getWebElement(treemap.get("addgoldtree")).click();
+    }
+    public void addCommunity(){
+        getWebElement(treemap.get("addfromcommunity")).click();
+        waitForSeconds(2);
+        getWebElement(treemap.get("addcommtree")).click();
+    }
 }
