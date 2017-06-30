@@ -22,10 +22,10 @@ public class BaseTestScript {
     }
     @AfterSuite
     public void signOut(){
-        DesignModule save = new DesignModule();
-        save.saveChanges();
+        /*DesignModule savechange = new DesignModule();
+        savechange.saveChanges();
         TreeEditor homebutton = new TreeEditor();
-        homebutton.navigateHome();
+        homebutton.navigateHome();*/
         StrategyDashboard logout = new StrategyDashboard();
         logout.logOut();
         BrowserDriver.closeBrowser();

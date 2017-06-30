@@ -18,7 +18,7 @@
     <Element name = "fullscreen" locatorType="className" locatorValue="ico full-screen"/>
     <Element name = "undoaction" locatorType="id" locatorValue = "btnUndo"/>
     <Element name = "redoaction" locatorType="id" locatorValue = "btnRedo"/>
-    <Element name = "noramltreeview" locatorType="id" locatorValue="btnTreeView"/>
+    <Element name = "normaltreeview" locatorType="id" locatorValue="btnTreeView"/>
     <Element name = "gridview" locatorType="id" locatorValue="btnGridView"/>
     <Element name = "STview" locatorType="id" locatorValue="btnDetailsViewST"/>
     <Element name = "daysview" locatorType="id" locatorValue="btnDetailsView"/>

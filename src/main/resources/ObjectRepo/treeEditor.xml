@@ -44,6 +44,15 @@
     <Element name = "noparent" locatorType="linkText" locatorValue="No"/>
     <Element name = "yesparent" locatorType="linkText" locatorValue="Yes"/>
     <Element name = "navigatedesign" locatorType="xpath" locatorValue="//a[@href='/Design/Tree']"/>
-
-
+    <Element name = "definegroups" locatorType="id" locatorValue="btnDefineGroupsLink"/>
+    <Element name = "addgroup" locatorType="xpath" locatorValue="//a[@class ='add-group-button']"/>
+    <Element name = "groupname" locatorType="xpath" locatorValue="//textarea[@rows='1']"/>
+    <Element name = "savegroups" locatorType="id" locatorValue="btnSaveGroups"/>
+    <Element name = "allocategroups" locatorType="id" locatorValue="btnAllocateGroupsLink"/>
+    <Element name = "groupdropdown" locatorType="xpath" locatorValue="//select[starts-with(@id,'select_')]"/>
+    <Element name = "groupok" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK_')]"/>
+    <Element name = "treeselection" locatorType="xpath" locatorValue="//a[@href='/Tree']"/>
+    <Element name = "treeselect" locatorType="xpath" locatorValue="//td[@title='Test Automated New tree on 30 june']"/>
+    <Element name = "usetemplate" locatorType="id" locatorValue="btnUseAsTemplate"/>
+    <Element name = "selectopen" locatorType="id" locatorValue="btnOpen"/>
 </Elements>

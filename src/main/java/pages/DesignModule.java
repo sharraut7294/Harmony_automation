@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import util.GuiControl;
 import util.XMLReader;
 
@@ -98,11 +99,43 @@ public class DesignModule extends GuiControl{
     public void addGoldratt(){
         getWebElement(treemap.get("addfromgoldratt")).click();
         waitForSeconds(2);
-        getWebElement(treemap.get("addgoldtree")).click();
+        getWebElement(treemap.get("projectgoldratttree")).click();
+        waitForSeconds(1);
+        Actions act1 = new Actions(getWebDriver());
+        act1.moveToElement(getWebElement(treemap.get("addgoldtree"))).click().build().perform();
     }
     public void addCommunity(){
         getWebElement(treemap.get("addfromcommunity")).click();
         waitForSeconds(2);
         getWebElement(treemap.get("addcommtree")).click();
+        waitForSeconds(1);
+
+    }
+
+    public void defineGroups(String groupname){
+        getWebElement(treemap.get("definegroups")).click();
+        getWebElement(treemap.get("addgroup")).click();
+        getWebElement(treemap.get("groupname")).sendKeys(groupname);
+        waitForSeconds(1);
+        getWebElement(treemap.get("savegroups")).click();
+    }
+
+    public void allocateGroups(){
+        getWebElement(treemap.get("allocategroups")).click();
+        Select oSelect = new Select(getWebElement(treemap.get("groupdropdown")));
+        oSelect.selectByIndex(1);
+        waitForSeconds(1);
+        getWebElement(treemap.get("groupok")).click();
+    }
+
+    public void useAsTemplate(){
+        getWebElement(treemap.get("treeselection")).click();
+        getWebElement(treemap.get("treeselect")).click();
+        getWebElement(treemap.get("usetemplate")).click();
+        waitForSeconds(2);
+        alertPopup();
+    }
+    public void openTree(){
+        getWebElement(treemap.get("selectopen")).click();
     }
 }

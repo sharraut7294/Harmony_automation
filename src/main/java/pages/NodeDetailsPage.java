@@ -12,13 +12,11 @@ public class NodeDetailsPage extends GuiControl {
     Map<String,String> nodemap = new XMLReader().getObjectRepoData("treeEditor");
 
     public void addStrategyDetails(String strategy){
-        waitForSeconds(2);
         frame("Strategy_ifr");
         getWebElement(nodemap.get("strategydetails")).sendKeys(strategy);
         switchMain();
     }
     public void addTacticDetails(String tactic){
-        waitForSeconds(1);
         frame("Tactics_ifr");
         getWebElement(nodemap.get("tacticdetails")).sendKeys(tactic);
         switchMain();
@@ -29,7 +27,6 @@ public class NodeDetailsPage extends GuiControl {
     }
 
     public void addNecessaryAssumptions(String necessaryassumptions){
-        waitForSeconds(1);
         frame("NecessaryAssumptions_ifr");
         getWebElement(nodemap.get("necessaryassumptions")).sendKeys(necessaryassumptions);
         switchMain();
@@ -39,7 +36,6 @@ public class NodeDetailsPage extends GuiControl {
     }
 
     public void parallelAssumptions(String parallelassumptions){
-        waitForSeconds(1);
         frame("ParallelAssumptions_ifr");
         getWebElement(nodemap.get("parallelassumptions")).sendKeys(parallelassumptions);
         switchMain();
@@ -87,6 +83,7 @@ public class NodeDetailsPage extends GuiControl {
 
     public void strategyPlanning(){
         getWebElement(nodemap.get("strategyplanning")).click();
+        waitForSeconds(1);
     }
     public void saveStrategyPlanning(){
         getWebElement(nodemap.get("savestrategy")).click();
@@ -94,6 +91,7 @@ public class NodeDetailsPage extends GuiControl {
     }
     public void tacticPlanning(){
         getWebElement(nodemap.get("tacticplanning")).click();
+        waitForSeconds(1);
     }
     public void saveTacticPlanning(){
         getWebElement(nodemap.get("savetactic")).click();

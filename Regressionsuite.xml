@@ -19,12 +19,25 @@
             <class name="TacticPlanningNodeDetails"/>
             <class name="PresentationMode"/>
             <class name="CloseNodeDetails"/>
-            <class name="NavigateDesign"/>
+            <class name="NavigateDesign"/>-->
             <class name="DeleteChild"/>
             <class name="DeleteParentSingleChild"/>
             <class name="UndoAction"/>
             <class name="DeleteParentReplaceChild"/>
             <class name="DeleteParentMultipleChild"/>
+            <!--<class name="AddGoldratt"/>
+            <class name="AddCommunity"/>-->
+            <class name="DefineGroups"/>
+            <class name="AllocateGroups"/>
+            <class name="UseAsTemplate"/>
+            <class name="OpenTree"/>
+            <class name="NavigateValidation"/>
+            <class name="IntroTrees"/>
+            <class name="InsertComment"/>
+            <class name="StatusValidated"/>
+            <class name="StatusNotValidated"/>
+            <class name="ExcelExport"/>
+            <class name="ReviewByExpert"/>
         </classes>
     </test>
 </suite>

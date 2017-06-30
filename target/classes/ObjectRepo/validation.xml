@@ -1,0 +1,14 @@
+<Elements>
+    <Element name = "navigatevalidation" locatorType="linkText" locatorValue="S&amp;T Validation"/>
+    <Element name = "introtrees" locatorType="id" locatorValue="btnIntroductionToTreesLink"/>
+    <Element name = "addcomment" locatorType="id" locatorValue="btnAddCommentLink"/>
+    <Element name = "commentText" locatorType="xpath" locatorValue="//textarea[starts-with(@id,'inputText')]"/>
+    <Element name = "okcomment" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK_')]"/>
+    <Element name = "statusvalidated" locatorType="id" locatorValue="btnSetValidatedStatusLink"/>
+    <Element name = "statusnotvalid" locatorType="id" locatorValue="btnSetNotValidatedStatusLink"/>
+    <Element name = "exportexcel" locatorType="id" locatorValue="btnExportLink"/>
+    <Element name = "saveall" locatorType="xpath" locatorValue="//a[starts-with(@title,'Save All')]"/>
+    <Element name = "reviewbyexpert" locatorType="id" locatorValue="btnRequestReviewByExpertLink"/>
+    <Element name = "actiondropdown" locatorType="xpath" locatorValue="//select[@name='SelectedItem']"/>
+    <Element name = "treereview" locatorType="xpath" locatorValue="//a[@href='/ReviewLibrary']"/>
+</Elements>
