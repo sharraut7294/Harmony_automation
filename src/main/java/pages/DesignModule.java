@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -34,15 +35,19 @@ public class DesignModule extends GuiControl{
         }
     }
     public void navigateUp(){
+        waitForSeconds(5);
         getWebElement(designmap.get("navigateup")).click();
     }
     public void navigateDown(){
+        waitForSeconds(5);
         getWebElement(designmap.get("navigatebottom")).click();
     }
     public void navigateLeft(){
+        waitForSeconds(5);
         getWebElement(designmap.get("navigateleft")).click();
     }
     public void navigateRight(){
+        waitForSeconds(5);
         getWebElement(designmap.get("navigateright")).click();
     }
 
@@ -52,9 +57,17 @@ public class DesignModule extends GuiControl{
         getWebElement(treemap.get("parentname")).sendKeys(parentname);
         getWebElement(treemap.get("okbutton")).click();
     }
-    public void saveChanges(){
+    public boolean saveChanges(){
         getWebElement(designmap.get("savebutton")).click();
-        waitForSeconds(1);
+        try {
+            alertPopup();
+            return true;
+        }
+        catch (NoAlertPresentException exception) {
+            exception.printStackTrace();
+            waitForSeconds(3);
+            return false;
+        }
     }
     //Element not clickable error
 
@@ -100,7 +113,6 @@ public class DesignModule extends GuiControl{
         getWebElement(treemap.get("addfromgoldratt")).click();
         waitForSeconds(2);
         getWebElement(treemap.get("projectgoldratttree")).click();
-        waitForSeconds(1);
         Actions act1 = new Actions(getWebDriver());
         act1.moveToElement(getWebElement(treemap.get("addgoldtree"))).click().build().perform();
     }
@@ -113,7 +125,8 @@ public class DesignModule extends GuiControl{
     }
 
     public void defineGroups(String groupname){
-        getWebElement(treemap.get("definegroups")).click();
+        Actions act = new Actions(getWebDriver());
+        act.moveToElement(getWebElement(treemap.get("definegroups"))).click().build().perform();
         getWebElement(treemap.get("addgroup")).click();
         getWebElement(treemap.get("groupname")).sendKeys(groupname);
         waitForSeconds(1);

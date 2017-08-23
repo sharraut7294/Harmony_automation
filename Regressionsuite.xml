@@ -19,7 +19,7 @@
             <class name="TacticPlanningNodeDetails"/>
             <class name="PresentationMode"/>
             <class name="CloseNodeDetails"/>
-            <class name="NavigateDesign"/>-->
+            <class name="NavigateDesign"/>
             <class name="DeleteChild"/>
             <class name="DeleteParentSingleChild"/>
             <class name="UndoAction"/>
@@ -37,7 +37,26 @@
             <class name="StatusValidated"/>
             <class name="StatusNotValidated"/>
             <class name="ExcelExport"/>
-            <class name="ReviewByExpert"/>
+            <!--<class name="ReviewByExpert"/>
+            <class name="GoToTool"/>-->
+            <class name="FullScreen"/>
+            <class name="NodeFinancialImpact"/>
+            <class name="FinancialModel"/>
+            <class name="NavigatePlanning"/>
+            <class name="ManageResources"/>
+            <class name="PlanningPreferences"/>
+            <class name="CreateProjectNetwork"/>
+            <class name="ProjectGanttChart"/>
+            <class name="CriticalChainSimulation"/>
+            <class name="AllocateTacticDays"/>
+            <class name="AllocateTacticManager"/>
+            <class name="AllocateNodeTitle"/>
+            <class name="AllocateTacticParticipant"/>
+            <class name="ProjectCosting"/>
+            <class name="ChangeStrategyOwner"/>
+            <class name="TacticStausIP"/>
+            <class name="TacticCompleted"/>
+            <class name="StrategyAchieved"/>
         </classes>
     </test>
 </suite>

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.support.ui.Select;
 import util.GuiControl;
 import util.XMLReader;
 
@@ -52,4 +53,39 @@ public class VaildationModule extends GuiControl {
     public void reviewExpert(){
         getWebElement(validationmap.get("reviewbyexpert")).click();
     }
+
+    public void cancelReview(){
+        Select oSelect = new Select(getWebElement(validationmap.get("actiondropdown")));
+        waitForSeconds(2);
+        oSelect.selectByIndex(1);
+    }
+    public void submitCommunity(){
+        getWebElement(validationmap.get("submitcommunity")).click();
+        getWebElement(validationmap.get("communityuse")).click();
+        waitForSeconds(1);
+        getWebElement(validationmap.get("communityok")).click();
+        waitForSeconds(2);
+    }
+
+    public void fullScreen(){
+        getWebElement(validationmap.get("fullscreenlink")).click();
+    }
+
+    public void deactivateFullscreen(){
+        getWebElement(treeeditormap.get("fullscreenactive")).click();
+    }
+    public void nodeFinancialImpact(){
+        getWebElement(validationmap.get("nodefinancialimpact")).click();
+        for (int i = 0;i<=1;i++){
+            getWebElement(validationmap.get("addyear")).click();
+        }
+        getWebElement(validationmap.get("closefinancialimpact")).click();
+    }
+    public void financialModel(){
+        getWebElement(validationmap.get("financialmodel")).click();
+        /*getWebElement(validationmap.get("exportfinancialmodel")).click();
+        waitForSeconds(1);*/
+        getWebElement(validationmap.get("closefinancialmodel")).click();
+    }
+
 }

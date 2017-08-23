@@ -3,6 +3,7 @@ package util;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.Keys;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -79,7 +80,9 @@ public class GuiControl {
     public void alertPopup(){
         Alert confirmationalert = getWebDriver().switchTo().alert();
         confirmationalert.accept();
-
+    }
+    public void refreshPage(){
+        webDriver.navigate().refresh();
     }
 
 }

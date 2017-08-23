@@ -7,13 +7,18 @@
     <Element name = "statusvalidated" locatorType="id" locatorValue="btnSetValidatedStatusLink"/>
     <Element name = "statusnotvalid" locatorType="id" locatorValue="btnSetNotValidatedStatusLink"/>
     <Element name = "exportexcel" locatorType="id" locatorValue="btnExportLink"/>
-    <Element name = "saveall" locatorType="xpath" locatorValue="//a[starts-with(@title,'Save All')]"/>
     <Element name = "reviewbyexpert" locatorType="id" locatorValue="btnRequestReviewByExpertLink"/>
     <Element name = "actiondropdown" locatorType="xpath" locatorValue="//select[@name='SelectedItem']"/>
     <Element name = "submitcommunity" locatorType="id" locatorValue="btnSendToCommunityLibrary"/>
     <Element name = "communityview" locatorType="xpath" locatorValue="//input[@id='rdCommunityView']"/>
     <Element name = "communityuse" locatorType="xpath" locatorValue="//input[@id='rdCommunityUse']"/>
     <Element name = "communityok" locatorType="xpath" locatorValue="//a[@id='btnApplySubmitToCommunity']"/>
-    <>
-
+    <Element name = "actiondropdown" locatorType="xpath" locatorValue="//select[@name='SelectedItem']"/>
+    <Element name = "fullscreenlink" locatorType="id" locatorValue="btnFullScreenLink"/>
+    <Element name = "nodefinancialimpact" locatorType="id" locatorValue="btnFinancialImpactLink"/>
+    <Element name = "addyear" locatorType="id" locatorValue="btnAddYearContainer"/>
+    <Element name = "closefinancialimpact" locatorType="id" locatorValue="btnClose"/>
+    <Element name = "financialmodel" locatorType="id" locatorValue="btnFinancialModelLink"/>
+    <Element name = "exportfinancialmodel" locatorType="id" locatorValue="export-financial-model"/>
+    <Element name = "closefinancialmodel" locatorType="id" locatorValue="btnClose"/>
 </Elements>

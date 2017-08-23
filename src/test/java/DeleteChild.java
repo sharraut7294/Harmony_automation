@@ -8,8 +8,6 @@ public class DeleteChild {
     @Test
     public void deleteChild(){
         DesignModule delchild = new DesignModule();
-        delchild.navigateUp();
-        delchild.navigateLeft();
         delchild.navigateDown();
         delchild.navigateDown();
         delchild.deleteChildNode();

@@ -1,0 +1,80 @@
+<Elements>
+    <Element name = "navigateplanning" locatorType="linkText" locatorValue="S&amp;T Planning"/>
+    <Element name="manageresources" locatorType="id" locatorValue="btnManageResourcesLink"/>
+    <Element name="addresource" locatorType="id" locatorValue="btnAddResource"/>
+    <Element name="firstname" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxFirstName')]"/>
+    <Element name="lastname" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxLastName')]"/>
+    <Element name="email" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxEmail')]"/>
+    <Element name="phonenumber" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxPhoneNumber')]"/>
+    <Element name="resourcetitle" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxTitle')]"/>
+    <Element name="resourcecost" locatorType="xpath" locatorValue="//input[starts-with(@id,'txtBoxDailyCost')]"/>
+    <Element name="saveresource" locatorType="xpath" locatorValue="//a[starts-with(@id,'btnSaveResource')]"/>
+    <Element name="cancelresource" locatorType="xpath" locatorValue="btnCancelSaveResource"/>
+    <Element name="closeresource" locatorType="linkText" locatorValue="Close"/>
+    <Element name="planningpreferences" locatorType="id" locatorValue="btnTreePreferencesLink"/>
+    <Element name="defaulttacticdays" locatorType="xpath" locatorValue="//input[contains(@data-bind,'value: TacticPlannedDays')]"/>
+    <Element name="defaultstrategydays" locatorType="xpath" locatorValue="//input[contains(@data-bind,'value: StrategyPlannedDays')]"/>
+    <Element name="buffercc" locatorType="xpath" locatorValue="//input[contains(@data-bind,'value: ProjectBuffer')]"/>
+    <Element name="bufferagrregate" locatorType="xpath" locatorValue="//input[contains(@data-bind,'value: ProjectBufferCutting')]"/>
+    <Element name="savepreferences" locatorType="id" locatorValue="btnSavePreferences"/>
+    <Element name="projectnetwork" locatorType="id" locatorValue="btnCreateProjectNetworkLink"/>
+    <Element name="yesnetwork" locatorType="linkText" locatorValue="Yes"/>
+    <Element name="nonetwork" locatorType="linkText" locatorValue="No"/>
+    <Element name="ganttchart" locatorType="id" locatorValue="btnProjectGanttChartLink"/>
+    <Element name="addcolumns" locatorType="id" locatorValue="btnColumns"/>
+    <Element name="strategydays" locatorType="id" locatorValue="DaysToAchiveStrategyVis"/>
+    <Element name="tacticdays" locatorType="id" locatorValue="DaysToImplementTacticsVis"/>
+    <Element name="budgetedcost" locatorType="id" locatorValue="ClmBudgetedCost"/>
+    <Element name="actualcost" locatorType="id" locatorValue="ClmActualCost"/>
+    <Element name="criticalchain" locatorType="id" locatorValue="chbCriticalChainNetwork"/>
+    <Element name="closeganttchart" locatorType="linkText" locatorValue="Close"/>
+    <Element name="criticalchainsimulation" locatorType="id" locatorValue="btnPlanningSimulationLink"/>
+    <Element name="allocateresources" locatorType="id" locatorValue="btnAllocateResourcesAndTimeLink"/>
+    <Element name="edit-tactic" locatorType="xpath" locatorValue="//td[@aria-describedby='grid_TacticPlannedDays' and @title='5']"/>
+    <Element name="tactic-days" locatorType="xpath" locatorValue="//input[@id='3_TacticPlannedDays']"/>
+    <Element name="recalculate" locatorType="xpath" locatorValue="//a[contains(@id,'btnRefreshAllocateResourcesAndTime')]"/>
+    <Element name="allocatemytasks" locatorType="xpath" locatorValue="//a[@id='ui-id-6']"/>
+    <Element name="allocatekanban" locatorType="xpath" locatorValue="//a[@id='ui-id-7']"/>
+    <Element name="edittacticmanager" locatorType="xpath" locatorValue="//td[@aria-describedby='grid_TacticsManager']"/>
+    <Element name="tacticmanagerdropdown" locatorType="xpath" locatorValue="//select[contains(@id,'1_TacticsManager')]"/>
+    <Element name="selecttacticmanager" locatorType="xpath" locatorValue="//option[contains(.,'Kedar Bhingare, SE')]"/>
+    <Element name="allocatetitle" locatorType="xpath" locatorValue="//td[contains(@title,'Parent node')]"/>
+    <Element name="changetitle" locatorType="xpath" locatorValue="//textarea[contains(@id,'Title')]"/>
+    <Element name="allocateparticipant" locatorType="xpath" locatorValue="//td[contains(@aria-describedby,'grid_TacticParticipants')]"/>
+    <Element name="addall" locatorType="xpath" locatorValue="//a[@class='add-all']"/>
+    <Element name="removeparticipant" locatorType="xpath" locatorValue="//span[contains(@class,'ui-corner-all ui-icon ui-icon-minus')]"/>
+    <Element name="includeincosting" locatorType="xpath" locatorValue="//input[@data-bind='checked: IncludeInCosting']"/>
+    <Element name="participantworkdays" locatorType="xpath" locatorValue="//input[contains(@data-bind,'value: WorkDays, numeric: WorkDays')]"/>
+    <Element name="saveparticipant" locatorType="xpath" locatorValue="//a[@id='btnSaveTacticParticipants']"/>
+    <Element name="allocategridview" locatorType="xpath" locatorValue="//a[@href='#tabs_0']"/>
+    <Element name="projectcostinglink" locatorType="xpath" locatorValue="//a[@id='btnProjectCostingLink']"/>
+    <Element name="projectcostingmytasks" locatorType="xpath" locatorValue="//a[@href='#tabs_2']"/>
+    <Element name="projectcostingkanban" locatorType="xpath" locatorValue="//a[@href='#tabs_3']"/>
+    <Element name="treeview" locatorType="xpath" locatorValue="//a[@class='ico tree-view']"/>
+    <Element name="detailtreeview" locatorType="xpath" locatorValue="//a[@class='ico details-view']"/>
+    <Element name="strategyplanning" locatorType="xpath" locatorValue="//a[@id='btnStrategyPlanningLink']"/>
+    <Element name="strategyownerdropdown" locatorType="xpath" locatorValue=".//*[@id='divStrategyTracking']/table/tbody/tr[1]/td[2]/select"/>
+    <Element name="measurementTypeboolean" locatorType="xpath" locatorValue="//input[@value='Boolean']"/>
+    <Element name="measurementTypecontinuos" locatorType="xpath" locatorValue="//input[@value='Continuous']"/>
+    <Element name="measurementunit" locatorType="xpath" locatorValue="//input[@data-bind='value: MeasurementUnit']"/>
+    <Element name="addnewmeasurement" locatorType="xpath" locatorValue="//a[@id='btnAddNewMeasurementType']"/>
+    <Element name="plannedstrategydays" locatorType="xpath" locatorValue="//input[@data-bind='enable: (PlannedDaysEnable() &amp;&amp; IsLeaf() &amp;&amp; Editable), value: PlannedDays.extend({numericStrategy: 0}), event: { change: $root.PlannedDaysChanged }']"/>
+    <Element name="savestrategydetails" locatorType="xpath" locatorValue="//a[@id='btnSaveStrategyDetails']"/>
+    <Element name="tacticplanning" locatorType="xpath" locatorValue="//a[@id='btnTacticPlanningLink']"/>
+    <Element name="tacticowner" locatorType="xpath" locatorValue=".//*[@id='tabs-1']/table/tbody/tr[1]/td[2]/select"/>
+    <Element name="tacticstatus" locatorType="xpath" locatorValue=".//*[@id='tabs-1']/table/tbody/tr[2]/td[2]/select"/>
+    <Element name="prerequisites" locatorType="xpath" locatorValue="//a[@href='#tabs-2']"/>
+    <Element name="startnodeasap" locatorType="xpath" locatorValue="//input[@data-bind='checked: StartOption']"/>
+    <Element name="checklist" locatorType="xpath" locatorValue="//a[@href='#tabs-3']"/>
+    <Element name="addnewchecklist" locatorType="xpath" locatorValue="//a[@data-bind='click: Add, visible: $root.Editable']"/>
+    <Element name="checklistname" locatorType="xpath" locatorValue="//input[@data-bind='value: Key, enabled: $root.Editable']"/>
+    <Element name="checkall" locatorType="xpath" locatorValue="//a[@data-bind='click: CheckAll, visible: Items().length > 0']"/>
+    <Element name="waitingfor" locatorType="xpath" locatorValue="//a[@id='ui-id-7']"/>
+    <Element name="waitingfortext" locatorType="xpath" locatorValue="//textarea[@data-bind='value: WaitingFor']"/>
+    <Element name="recoveryplan" locatorType="xpath" locatorValue="//a[@href='#tabs-5']"/>
+    <Element name="recoveryplantext" locatorType="xpath" locatorValue="//textarea[@data-bind='value: RecoveryPlan']"/>
+    <Element name="tacticdetails" locatorType="xpath" locatorValue="//a[@href='#tabs-1']"/>
+    <Element name="savetacticdetails" locatorType="xpath" locatorValue="//a[@id='btnSaveTacticDetails']"/>
+    <Element name="strategyAchievedCheckbox" locatorType="xpath" locatorValue="//input[@data-bind='enable: (PlanningAchievedEnable() &amp;&amp; IsLeaf() &amp;&amp; Editable), checked: IsAchived, event: { change: $root.IsAchivedChanged }']"/>
+    <Element name="strategyNotes" locatorType="xpath" locatorValue="//textarea[@data-bind='value: Notes']"/>
+</Elements>

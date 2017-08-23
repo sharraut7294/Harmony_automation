@@ -8,6 +8,6 @@ public class CreateTree{
     @Test
     public void createST(){
         StrategyDashboard tree = new StrategyDashboard();
-        tree.createTree("Test Automated New tree on 30 june");
+        tree.createTree("Test Automated New tree on 16 August");
     }
 }

@@ -1,7 +1,7 @@
 <Elements>
     <Element name = "usernamedrop" locatorType = "xpath" locatorValue = "/html/body/header/div/div/div/div/ul/li[4]/div/a"/>
     <Element name = "logout" locatorType = "linkText" locatorValue = "Logout"/>
-    <Element name = "createtree" locatorType = "linkText" locatorValue = "Create S&amp;T"/>
+    <Element name = "createtree" locatorType = "xpath" locatorValue = "//a[@title='Create S&amp;T']"/>
     <Element name = "treename" locatorType="xpath" locatorValue="//*[starts-with(@id,'inputText')]"/>
     <Element name = "okbutton" locatorType="xpath" locatorValue="//*[starts-with(@id,'buttonOK')]"/>
     <Element name = "treeselect" locatorType="xpath" locatorValue="//*[@data-id='1020']"/>
@@ -12,4 +12,7 @@
     <Element name = "canchangeall" locatorType="id" locatorValue="chbCheckAll"/>
     <Element name = "sharebutton" locatorType="id" locatorValue="btnApplyShare"/>
     <Element name = "shareok" locatorType="id" locatorValue="btnCloseSharingResultDialog"/>
+    <Element name = "saveall" locatorType="xpath" locatorValue="//a[starts-with(@title,'Save All')]"/>
+    <Element name = "discardall" locatorType="xpath" locatorValue="//a[starts-with(@id,'btnDiscard')]"/>
+    <Element name = "gotool" locatorType="xpath" locatorValue="//a[starts-with(@id,'btnGoToTool')]"/>
 </Elements>

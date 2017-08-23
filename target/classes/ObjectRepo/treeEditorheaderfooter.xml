@@ -27,4 +27,5 @@
     <Element name = "findandreplace" locatorType="id" locatorValue="btnFindAndReplace"/>
     <Element name = "savebutton" locatorType="id" locatorValue="btnSave"/>
     <Element name = "saveasbutton" locatorType="id" locatorValue="btnSaveAs"/>
+    <Element name = "fullscreenactive" locatorType="xpath" locatorValue="//a[starts-with(@class,'ico full-screen active')]"/>
 </Elements>

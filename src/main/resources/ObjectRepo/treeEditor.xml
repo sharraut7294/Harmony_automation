@@ -52,7 +52,7 @@
     <Element name = "groupdropdown" locatorType="xpath" locatorValue="//select[starts-with(@id,'select_')]"/>
     <Element name = "groupok" locatorType="xpath" locatorValue="//a[starts-with(@id,'buttonOK_')]"/>
     <Element name = "treeselection" locatorType="xpath" locatorValue="//a[@href='/Tree']"/>
-    <Element name = "treeselect" locatorType="xpath" locatorValue="//td[@title='Test Automated New tree on 30 june']"/>
+    <Element name = "treeselect" locatorType="xpath" locatorValue="//td[@title='Test Automated New tree on 16 August']"/>
     <Element name = "usetemplate" locatorType="id" locatorValue="btnUseAsTemplate"/>
     <Element name = "selectopen" locatorType="id" locatorValue="btnOpen"/>
 </Elements>

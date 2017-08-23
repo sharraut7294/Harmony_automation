@@ -16,7 +16,7 @@ public class DeleteParentMultipleChild {
         {
             parentdel.undoAction();
         }
-        parentdel.saveChanges();
+        //parentdel.saveChanges();
     }
 }
 
